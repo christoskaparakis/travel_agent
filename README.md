@@ -30,6 +30,12 @@ python -m pip install -e '.[dev]'
 Copy `.env.example` to `.env` and fill in the values required by the chosen
 provider. Do not commit `.env` or API keys.
 
+## Run the agent
+
+```bash
+uv run adk web --allow_origins="*" src/travel_agent --reload_agents
+```
+
 ## Run tests
 
 ```bash
