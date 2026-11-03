@@ -8,7 +8,10 @@ version = "0.1.0"
 description = "An LLM-powered assistant for travel planning"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+	"google-adk>=2.4.0,<2.5.0",
+	"litellm>=1.84.0,<2.0.0",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
